@@ -20,7 +20,7 @@ def ensureDir(d):
 
 def loadCache(cacheFile):
     with open(cacheFile, 'rb') as fid:
-        return pickle.load(fid)
+        return pickle.load(fid, encoding="iso-8859-1")
 
 
 def saveCache(cacheFile, data):
