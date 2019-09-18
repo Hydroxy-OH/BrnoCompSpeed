@@ -2,12 +2,12 @@
 
 Dataset published with paper **SOCHOR Jakub et al. Comprehensive Data Set for Automatic Single Camera Visual Speed Measurement, IEEE T-ITS**
 
-The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/).
+The dataset can be downloaded from [the website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/).
 
 
 ## How to use the code
 
-1. Install **PYTHON2**, packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
+1. Install **PYTHON3**, packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
 1. Download the [dataset](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/) and place the results and dataset folders from the downloaded archive on the same level as the code folder (root of the repository).
   * TIP: to save disk space use following command to get and unpack the dataset (WARNING: it has ~200GB)
   * `curl https://medusa.fit.vutbr.cz/traffic/data/2016-ITS-BrnoCompSpeed-full.tar | tar xv`
@@ -18,7 +18,7 @@ The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/tra
 
 ## Additional information
 
-* For information about vehicle types from our country (Czech Republic), you can use following datasets:  [COD20K](http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/), [BoxCars21k](https://medusa.fit.vutbr.cz/traffic/).
+* For information about vehicle types from Czech Republic, you can use following datasets:  [COD20K](http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/), [BoxCars21k](https://medusa.fit.vutbr.cz/traffic/).
 * The dataset itself containes videos, mask, screenshots, and pkl file with the ground truth data
 * The dataset contains extra session0 which was annotated manually and is not included in the paper
 * The session0 is meant to be as training for all the splits (A,B,C - see the paper)
