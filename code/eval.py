@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 
-
 import argparse
 import itertools
 import json
 import operator
+import os
 import sys
 from functools import reduce
 
 import matplotlib
 import matplotlib.pyplot as plt
+import numpy as np
 import scipy.ndimage
 import scipy.optimize
 import scipy.stats
@@ -20,7 +21,6 @@ from dataset_info import *
 from loading import *
 from utils import *
 
-matplotlib.rcParams['text.latex.unicode'] = True
 font = {'size': 13}
 matplotlib.rc('font', **font)
 
@@ -780,7 +780,7 @@ if __name__ == "__main__":
     relMaxError = showErrorCumHistogram(relErrors, "relative", "%")
     showSaveFig("speed_cum_error_histogram_rel.pdf", args)
 
-    #showErrorHistogram(signErrors, "speed", "km/h", 1)
-    #showSaveFig("error_histogram_speed.pdf", args)
-    #showErrorHistogram(distErrorSign, "distance", "m", 0.5)
-    #showSaveFig("error_histogram_distance.pdf", args)
+    # showErrorHistogram(signErrors, "speed", "km/h", 1)
+    # showSaveFig("error_histogram_speed.pdf", args)
+    # showErrorHistogram(distErrorSign, "distance", "m", 0.5)
+    # showSaveFig("error_histogram_distance.pdf", args)
